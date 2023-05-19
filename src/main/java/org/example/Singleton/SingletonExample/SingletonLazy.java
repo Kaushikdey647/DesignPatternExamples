@@ -1,6 +1,6 @@
 package org.example.Singleton.SingletonExample;
 
-class SingletonLazy {
+public class SingletonLazy {
     private static SingletonLazy instance;
 
     private SingletonLazy() {

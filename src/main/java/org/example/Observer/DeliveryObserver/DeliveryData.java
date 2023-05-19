@@ -3,7 +3,7 @@ package org.example.Observer.DeliveryObserver;
 import java.util.ArrayList;
 import java.util.List;
 
-class DeliveryData implements Subject {
+public class DeliveryData implements Subject {
     private List<Observer> observers;
     private String location;
 
@@ -34,6 +34,11 @@ class DeliveryData implements Subject {
     }
 
     public String getLocation() {
-        return "New York";
+        return location;
+    }
+
+    public void setLocation(String loc){
+        location = loc;
+        locationChanged();
     }
 }

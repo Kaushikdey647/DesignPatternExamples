@@ -1,6 +1,6 @@
 package org.example.Singleton.SingletonExample;
 
-class SingletonEager {
+public class SingletonEager {
     private static final SingletonEager instance = new SingletonEager();
 
     private SingletonEager() {
