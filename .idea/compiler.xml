@@ -6,7 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DesignPatternExamples" />
+        <module name="jdk-util-api" />
+        <module name="lld" />
+        <module name="effective-java" />
+        <module name="micronaut" />
+        <module name="jvm-internals" />
+        <module name="concurrency" />
+        <module name="java21-features" />
+        <module name="spring" />
+        <module name="jakarta-ee" />
+        <module name="loom" />
+        <module name="dsa" />
+        <module name="reactive" />
+        <module name="java17-features" />
+        <module name="java-core" />
+        <module name="design-patterns" />
       </profile>
     </annotationProcessing>
   </component>

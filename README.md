@@ -1,27 +1,30 @@
-# Design Pattern Examples
+# Java 17 Lab
 
-## Why?
+Maven multi-module repo for learning Java, anchored on Java 17. One module per topic; resources in [docs/resources.md](docs/resources.md).
 
-To be honest, I'm a complete beginner at Java and I'm trying to learn it. I've been reading a lot about design patterns and I think the best way to learn them is to implement them. So, I'm trying to implement them in Java.
+| Module | Topic |
+|---|---|
+| 01-java-core | OOP, generics, collections, streams |
+| 02-java17-features | records, sealed classes, pattern matching |
+| 03-jdk-util-api | `java.util` |
+| 04-effective-java | Effective Java 3e |
+| 05-concurrency | threads, JMM, `java.util.concurrent` |
+| 06-loom | virtual threads (JDK 21) |
+| 07-dsa | data structures & algorithms |
+| 08-design-patterns | Head First Design Patterns |
+| 09-lld | low-level design problems |
+| 10-jvm-internals | GC, class loading, JMH |
+| 11-spring | Spring / Spring Boot |
+| 12-reactive | Reactor, WebFlux |
+| 13-micronaut | Micronaut |
+| 14-jakarta-ee | Jakarta EE |
+| 15-java21-features | record patterns, switch patterns, sequenced collections (JDK 21) |
 
-## How?
+## Build
 
-So far, I'll be implementing the patterns and keeping track here
+```
+mvn clean verify                 # all modules
+mvn -pl 08-design-patterns test  # one module
+```
 
-- [x] Observer
-- [x] Decorator
-- [x] Singleton
-- [ ] Factory
-- [ ] Command
-- [ ] Adapter and Facade
-- [ ] Template Method
-- [ ] Iterator and Composite
-- [ ] State
-- [ ] Proxy
-- [ ] Compound Patterns
-
-## From Where?
-
-These patterns are learnt and implemented guided from O'Reily's Head First Design Patterns book.
-I'm trying to implement them in Java, but I'm not sure if I'm doing it right.
-So, if you find any mistakes, please let me know. As usual I'm available for mail on `20cs01043[at]iitbbs[dot]ac[dot]in`
+Open the root `pom.xml` as a project in IntelliJ IDEA.
